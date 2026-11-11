@@ -8,12 +8,21 @@
       "author": "Comunidade Skate",
       "description": "Distrito universitário completo com praças, escadarias, corrimãos e bowls.",
       "category": "Mundo Aberto",
-      "tags": ["Street", "University", "Corrimãos", "Grande"],
+      "tags": [
+        "Street",
+        "University",
+        "Corrimãos",
+        "Grande"
+      ],
       "sizeMB": 63.8,
       "version": "1.0",
       "previewUrl": "maps/University/preview.png",
-      "downloadUrl": "maps/University/University.skt",
-      "spawn": [294.641, 74.1171, -432.6013],
+      "downloadUrl": "https://github.com/SKATERmaker/UniversityFORskatefree/releases/download/1/University.skt",
+      "spawn": [
+        294.641,
+        74.1171,
+        -432.6013
+      ],
       "heading": 1.999
     }
   ]
