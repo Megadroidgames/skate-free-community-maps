@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#071120"><meta name="description" content="Explore os mapas da comunidade Skate Free. Encontre sua próxima sessão e adicione mapas .skt ao jogo.">
+<title>Mapas da Comunidade • Skate Free</title>
+<link rel="stylesheet" href="styles.css"><script>if(new URLSearchParams(location.search).get('ingame')==='1')document.documentElement.classList.add('ingame');</script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#catalog">Ir para os mapas</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./" aria-label="Skate Free início"><img src="assets/skate-free-logo.png" alt="Skate Free" width="220" height="70"></a>
+    <nav aria-label="Principal"><a href="#catalog">Mapas</a><a href="#how-to">Como instalar</a></nav>
+  </div>
+</header>
+<main class="container">
+<section id="catalog" class="catalog" aria-labelledby="catalog-title"><div class="section-heading"><h1 id="catalog-title">Mapas da comunidade <span class="count" id="total-count">—</span></h1></div>
+<div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar por nome, autor ou tag</span><input id="search" type="search" placeholder="Buscar mapa, autor ou tag…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><label class="sort"><span class="sr-only">Ordenar mapas</span><select id="sort"><option value="default">Ordem do catálogo</option><option value="name">Nome: A–Z</option><option value="smallest">Menor tamanho</option></select></label></div>
+<div class="filters" role="group" aria-label="Filtrar categoria"><button type="button" data-category="Todos" aria-pressed="true">Todos</button><button type="button" data-category="Mundo Aberto" aria-pressed="false">Mundo Aberto</button><button type="button" data-category="Street" aria-pressed="false">Street</button><button type="button" data-category="Skate Park" aria-pressed="false">Skate Park</button><button type="button" data-category="Mega Ramp" aria-pressed="false">Mega Ramp</button></div>
+<div class="results-meta"><span id="results-count" role="status">Carregando catálogo…</span><button id="clear" class="text-button" type="button" hidden>Limpar filtros ×</button></div><div id="map-grid" class="map-grid" aria-busy="true"></div><div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>Nenhum mapa encontrado.</h3><p>Tente outro nome, autor ou categoria.</p><button id="reset" type="button" class="secondary">Ver todos os mapas</button></div><div id="error" class="empty-state" hidden><h3>Não foi possível abrir o catálogo.</h3><p id="error-message">Confira sua conexão e tente novamente.</p><button id="retry" class="secondary" type="button">Tentar novamente</button></div>
+</section>
+<aside id="how-to" class="how-to"><h2>Como adicionar por link</h2><p>Clique em <strong>Copiar Link</strong> no mapa e cole em <strong>Adicionar por Link</strong> dentro do Skate Free.</p></aside>
+</main>
+<footer class="container footer"><span>Skate Free · Mapas da comunidade</span><span id="updated">Catálogo .skt</span></footer>
+<dialog id="map-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow" id="dialog-eyebrow">DETALHES DO MAPA</span><button id="close-dialog" type="button" class="icon-button" aria-label="Fechar">×</button></div><div id="dialog-preview"></div><div class="dialog-content"><h2 id="dialog-title"></h2><p id="dialog-author" class="muted"></p><p id="dialog-description"></p><div id="dialog-tags" class="tags"></div><dl id="dialog-meta" class="map-meta"></dl><p id="install-help" class="install-help" hidden>Se o jogo não abriu, copie o link abaixo e cole em <strong>Adicionar por Link</strong> no Skate Free, ou baixe o arquivo .skt.</p><label class="link-label" for="direct-link">Link direto do mapa</label><input id="direct-link" readonly><div id="dialog-actions" class="actions"></div></div></dialog>
+<div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+<noscript><p class="noscript">Ative o JavaScript para explorar os mapas. O catálogo também está disponível em <a href="catalog.json">catalog.json</a>.</p></noscript>
+</body></html>
