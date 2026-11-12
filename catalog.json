@@ -1,3 +1,4 @@
+
 {
   "version": 1,
   "updatedAt": "2026-11-11",
@@ -16,7 +17,7 @@
       ],
       "sizeMB": 63.8,
       "version": "1.0",
-      "previewUrl": "https://github.com/SKATERmaker/UniversityFORskatefree/blob/main/UniversityDistrict.jpg",
+      "previewUrl": "https://raw.githubusercontent.com/SKATERmaker/UniversityFORskatefree/main/UniversityDistrict.jpg",
       "downloadUrl": "https://github.com/SKATERmaker/UniversityFORskatefree/releases/download/1/University.skt",
       "spawn": [
         294.641,
